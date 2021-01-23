@@ -8,6 +8,7 @@ import avatar from '../../images/avatar.jpg'
 console.log(Data)
 
 const ViewDetails = () => {    
+    const 
     // const fetchData = ()=>{
     //     const data = Data.map(data=>{
     //         return(
