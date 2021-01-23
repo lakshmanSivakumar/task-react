@@ -1,0 +1,26 @@
+[
+    {
+        "Name" : "JS",
+        "InstructorImage" : "../../images/avatar.jpg",
+        "Rating" : 4,
+        "Description" : "The course is completely superb and we got many insights from this course"
+    },
+    {
+        "Name" : "HTML",
+        "InstructorImage" : "../../images/avatar.jpg",
+        "Rating" : 3,
+        "Description" : "The course is completely superb and we got many insights from this course"
+    },
+    {
+        "Name" : "Java",
+        "InstructorImage" : "../../images/avatar.jpg",
+        "Rating" : 2,
+        "Description" : "The course is completely superb and we got many insights from this course"
+    },
+    {
+        "Name" : "CSS",
+        "InstructorImage" : "../../images/avatar.jpg",
+        "Rating" : 3.5,
+        "Description" : "The course is completely superb and we got many insights from this course"
+    }
+]
