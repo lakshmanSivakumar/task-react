@@ -6,12 +6,16 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 90vh;
   background-color: #f6f6f6;
 }
 
+h1 {
+  text-align: center;
+}
+
 .courses {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -62,13 +66,8 @@ button:hover {
   height: 100vh;
   display: flex;
   justify-content: space-evenly;
-  background-color: white;
-}
-
-.ins-img{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .ins-img img {
@@ -96,6 +95,7 @@ button:hover {
 
 span {
   margin-right: 10px;
+  margin-top: 40px;
 }
 
 .checked {
@@ -119,8 +119,8 @@ form {
 form input:nth-child(-n+6) {
   margin-bottom: 40px;
   border: none; 
+  width: 80%;
 }
-
 
 h2 {
   text-align: center;
@@ -130,6 +130,7 @@ h2 {
 .name, .contact, .schedule, .time, .email, .enquiry, .submit{
   padding: 10px 20px;
   font-size: 1.2em;
+  width: 80%;
 }
 
 select {
@@ -138,6 +139,7 @@ select {
   padding: 10px 20px;
   font-size: 1.2em;
   color: rgba(0, 0, 0, 0.6);
+  width: 80%;
 }
 
 option {
@@ -151,10 +153,41 @@ option {
 
 .submit {
   margin: 40px auto 0px auto;
+  width: 80%;
+}
+@media screen and (max-width: 1200px) {
+  .view-details{
+    height: fit-content;
+    flex-flow: column wrap;
+    padding: 40px;
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  .ins-img {
+    text-align: center;
+  }
+
+  .ins-img img {
+    width: 100%;
+  }
 }
 
-.prev,.next{
-  background-color: white;
-  color: blue;
-  font-size: 2rem;
+@media screen and (max-width: 800px)  {
+
+  .flex-container {
+    flex-flow: column wrap;
+  }
+
+  .flex-container > img {
+    width: 60%;
+  }
+
+  form input:nth-child(-n+6), .name, .contact, .schedule, .time, .email, .enquiry, .submit, select {
+    width: 60%;
+    margin: 0px auto 40px auto;
+  }
+
 }

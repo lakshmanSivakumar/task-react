@@ -38,15 +38,15 @@ const Index = () => {
         <div className="flex-container">
             <img src={code} alt="course"></img>
             <form onSubmit={handleSubmitInfo}>
-            <h2>Please provide your details</h2>
+                <h2>Please provide your details</h2>
                 <input className="name" type="text" name="Name" placeholder="Name" required></input>
                 <input className="contact" type="tel" name="phone" placeholder="Contact Number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required></input>
-                <select onChange={changeSelectOptionHandler} classname="schedule" name="schedule">
+                <select classname="schedule" onChange={changeSelectOptionHandler} name="schedule">
                     <option>Select Schedule</option>
                     <option>Day Time</option>
                     <option>Night Time</option>
                 </select>
-                <select> 
+                <select className="time"> 
                     <option value="Choose">Choose Time</option>
                     {options} 
                 </select> 

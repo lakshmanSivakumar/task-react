@@ -15,13 +15,13 @@ const ViewDetails = () => {
             for(let i =0; i <d.rating; i++) {
                 elements.push(starC);
             }
-            for(let i=0; i<4-d.rating; i++) {
+            for(let i=0; i<5-d.rating; i++) {
                 elements.push(starUC);
             }
             return (
                 <div className="view-details">
                     <div className="ins-img">
-                            <img src={course} />
+                        <img src={course} alt="course"/>
                     </div>
                     <div className="right">
                         <div className="about">
