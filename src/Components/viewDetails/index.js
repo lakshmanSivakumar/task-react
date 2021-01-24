@@ -18,7 +18,6 @@ const ViewDetails = () => {
             for(let i=0; i<4-d.rating; i++) {
                 elements.push(starUC);
             }
-            // console.log(d.instructorImage);
             return (
                 <div className="view-details">
                     <div className="ins-img">
