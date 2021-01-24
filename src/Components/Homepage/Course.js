@@ -7,6 +7,10 @@ const Course = ({id, source, width, description}) => {
         history.push(`/viewdetails/${id}`);
     }
 
+    const handleSubmitInfo = () => {
+        history.push('/submitInfo');
+    }
+
     return (
         <div className="course">
             <div className="image">
@@ -15,7 +19,7 @@ const Course = ({id, source, width, description}) => {
             <p>{description}</p>
             <div className="buttons">
                 <button onClick={() => handleDetails(id)}>View details</button>
-                <button>Submit Info</button>
+                <button onClick={handleSubmitInfo}>Submit Info</button>
             </div>
         </div>
     );

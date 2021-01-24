@@ -2,6 +2,7 @@ import { useHistory,BrowserRouter as Router, Switch, Route } from 'react-router-
 
 import HomePage from './Components/Homepage/index';
 import ViewDetails from './Components/viewDetails/index'
+import SubmitInfo from './Components/submitInfo/index'
 import './App.css';
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
         </Route>
         <Route path="/viewdetails/:id">
           <ViewDetails />
+        </Route>
+        <Route path="/submitInfo">
+          <SubmitInfo />
         </Route>
       </Switch>
     </Router>

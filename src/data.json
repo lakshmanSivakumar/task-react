@@ -1,30 +1,34 @@
 [
     {
-        "id": "1",
-        "name": "JS",
-        "instructorImage": "../../images/avatar.jpg",
-        "rating": "4",
-        "description": "The course is completely superb and we got many insights from this course"
+        "id": 1,
+        "name": "HTML and CSS",
+        "instructorImage": "../../images/htmlAndCssAvatar.jpg",
+        "rating": 3,
+        "reviews": 40,
+        "description": "You can launch a new career in web development today by learning HTML & CSS. You don't need a computer science degree or expensive software. All you need is a computer, a bit of time, a lot of determination, and a teacher you trust. I've taught HTML and CSS to countless coworkers and held training sessions for fortune 100 companies. I am that teacher you can trust. Don't limit yourself by creating websites with some cheesy site-builder tool. This course teaches you how to take 100% control over your webpages by using the same concepts that every professional website is created with. This course does not assume any prior experience. We start at square one and learn together bit by bit. By the end of the course you will have created (by hand) a website that looks great on phones, tablets, laptops, and desktops alike. In the summer of 2020 the course has received a new section where we push our website live up onto the web using the free GitHub Pages service; this means you'll be able to share a link to what you've created with your friends, family, colleagues and the world!"
     },
     {
-        "id": "2",
-        "name": "HTML",
-        "instructorImage": "../../images/avatar.jpg",
-        "rating": "3",
-        "description": "The course is completely superb and we got many insights from this course"
+        "id": 2,
+        "name": "Node.js",
+        "instructorImage": "../../images/nodejsAvatar.jpg",
+        "rating": 4,
+        "reviews": 30,
+        "description": "This course was just completely refilmed to give you everything you need to master Node.js in 2020! This includes new content, updated versions, new features, and more. Have you tried to learn Node before? You start a new course, and the instructor has you installing a bunch of libraries before you even know what Node is or how it works. You eventually get stuck and reach out to the instructor, but you get no reply. You then close the course and never open it again. Sound familiar? I created this course to be what I wanted when I was learning Node. The Complete Node.js Developer Course covers the fundamentals of Node before diving deep into great tools like Express, Mongoose, and MongoDB. The entire course is based around a single goal: Turning you into a professional Node developer capable of developing, testing, and deploying real-world production applications."
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Javascript",
-        "instructorImage": "../../images/avatar.jpg",
-        "rating": "4",
-        "description": "The course is completely superb and we got many insights from this course"
+        "instructorImage": "../../images/javascriptAvatar.jpg",
+        "rating": 4,
+        "reviews": 100,
+        "description": "Hey gang, and welcome to your first step on the path to becoming a JavaScript ninja! In this course I'll be teaching you my absolute favourite language (JavaScript!) from the very beginning, right through to creating fully-fledged, dynamic & interactive web experiences. We'll cover all the basics to get you up-and-running quickly, before diving in to some of the really fun stuff like web-page manipulation, creating interactive forms, popups & other cool effects. Along the way we'll be using the latest additions to the JavaScript specification (ES6, 7 & beyond) and maintaining good coding standards to keep our code clean and effective! Once we master the basics, we'll dive into several real-life JavaScript projects, including an interactive quiz, a weather app, a real-time chat application and a small UI library you can use in all your future projects! We'll also take a look at some more advanced topics - object oriented programming, asynchronous code, real-time databases and much more. Finally, we'll be setting up a modern work-flow using Webpack & Babel, so that by the end of this course you'll be no less than a black-belt JavaScript developer with a lot of coding techniques in your tool-belt. Speaking of ninjas, I'm also known as The Net Ninja on YouTube, where you'll find hundreds of free coding tutorials, so feel free to pop by to say hello :)."
     },
     {
-        "id": "4",
-        "name": "CSS",
-        "instructorImage": "../../images/avatar.jpg",
-        "rating": "3",
-        "description": "The course is completely superb and we got many insights from this course"
+        "id": 4,
+        "name": "React",
+        "instructorImage": "../../images/reactAvatar.jpg",
+        "rating": 3,
+        "reviews": 80,
+        "description": "This course is fully up-to-date with the latest version of React and includes React Hooks! Of course it will be kept up-to-date in the future. What's this course about? Learn React or dive deeper into it. Learn the theory, solve assignments, practice in demo projects and build one big application which is improved throughout the course: The Burger Builder! More details please! JavaScript is the major driver of modern web applications since it's the only programming language which runs in the browser and hence allows you to provide highly reactive apps. You'll be able to achieve mobile-app like user experiences in the web. But using JavaScript can be challenging - it quickly becomes overwhelming to create a nice web app with vanilla JavaScript and jQuery only. React to the rescue! React is all about components - basically custom HTML elements - with which you can quickly build amazing and powerful web apps. Just build a component once, configure it to your needs, dynamically pass data into it (or listen to your own events!) and re-use it as often as needed. Need to display a list of users in your app? It's as simple as creating a User component and outputting it as often as needed. This course will start at the very basics and explain what exactly React is and how you may use it (and for which kind of apps). Thereafter, we'll go all the way from basic to advanced. We'll not just scratch the surface but dive deeply into React as well as popular libraries like react-router and Redux. By the end of the course, you can build amazing React (single page) applications!"
     }
 ]
