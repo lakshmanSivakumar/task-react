@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import {  useParams, useHistory,BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Data from "../../data.json"
+import avatar from '../../images/htmlAndCssAvatar.jpg'
 
 const ViewDetails = () => {   
     let { id } = useParams(); 
@@ -21,7 +22,8 @@ const ViewDetails = () => {
             return (
                 <div className="view-details">
                     <div className="ins-img">
-                            <img src={d.instructorImage}/>
+                            {d.instructorImage}
+                            <img src={d.instructorImage} />
                     </div>
                     <div className="right">
                         <div className="about">

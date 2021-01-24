@@ -148,3 +148,8 @@ option {
   margin: 40px auto 0px auto;
 }
 
+.prev,.next{
+  background-color: white;
+  color: blue;
+  font-size: 2rem;
+}
