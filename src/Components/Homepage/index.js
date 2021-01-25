@@ -18,7 +18,7 @@ const HomePage = () => {
         if(i === 0)
             Courses.push(<Course id={i+1} source={javascript} width={100} description="Get upskilled in Vanilla Javascript"/>)
         else if(i === 1)
-            Courses.push(<Course id={i+1} source={htmlAndCss} width={200} description="Get upskilled in HTML5 and CSS3"/>)
+            Courses.push(<Course id={i+1} source={htmlAndCss} width={140} description="Get upskilled in HTML5 and CSS3"/>)
         else if(i === 2)
             Courses.push(<Course id={i+1} source={nodejs} width={140} description="Get upskilled in Node.js"/>)
         else if(i === 3)
