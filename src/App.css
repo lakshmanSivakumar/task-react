@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 90vh;
-  background-color: #f6f6f6;
+  background-color: white;
 }
 
 h1 {
@@ -22,7 +22,6 @@ h1 {
 }
 
 .course {
-  width: 22%;
   background-color: white;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 3px;
@@ -34,20 +33,17 @@ h1 {
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 
-.image {
+.courseImage, p {
   text-align: center;
-}
-
-p {
-  text-align: center;
+  font-weight: 500;
 }
 
 .buttons {
-  height: 150px;
+  height: 100px;
   display: flex;
   flex-flow: column wrap;  
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 button {
@@ -58,9 +54,10 @@ button {
   color: teal;
   width: fit-content;
   padding: 10px 15px;
-  font-weight: 500;
+  font-weight: bold;
   border: 3px solid teal;
   transition: 0.3s ease-in-out;
+  letter-spacing: 2px;
 }
 
 button:hover {
@@ -68,26 +65,61 @@ button:hover {
   color: black;
 }
 
-.view-details{
-  height: 100vh;
+.popup-box {
+  position: fixed;
+  background: #00000050;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+ 
+.box {
+  position: relative;
+  width: 70%;
+  height: auto;
+  max-height: 75vh;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #eeeeee;
+  overflow: auto;
+  padding: 4%;
+}
+ 
+.close-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.view-details-image {
+  text-align: center;
+}
+
+.view-details-image img {
+  width: 80%;
+}
+
+.right {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: space-evenly;
   align-items: center;
-  background-color: white;
 }
 
-.ins-img img {
-  width: 550px;
-}
-
-.right{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.right .about{
+.right .about {
   text-align: center;
   letter-spacing: 2px;
   font-size: 2rem;
@@ -110,95 +142,76 @@ span {
 
 .flex-container {
   display: flex;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-evenly;
+  padding: 10%;
 }
 
-form {
-  height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-form input:nth-child(-n+6) {
-  margin-bottom: 40px;
-  border: none; 
+.flex-container img {
   width: 80%;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
+form {  
+  height: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .name, .contact, .schedule, .time, .email, .enquiry, .submit{
   padding: 10px 20px;
   font-size: 1.2em;
-  width: 80%;
+  width: 100%;
+  border: 3px solid #eeeeee;
 }
 
-select {
-  margin-bottom: 40px;
-  border: none;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.6);
-  width: 80%;
+.name, .contact, .schedule, .time, .email, .enquiry{
+  margin-bottom: 30px;
 }
 
-option {
-  color: black;
-}
-
-.enquiry {
-  border: none;
-  color:black;
+.schedule, .time {
+  color: grey;
 }
 
 .submit {
-  margin: 40px auto 0px auto;
-  width: 80%;
+  border: 3px solid teal;
 }
-@media screen and (max-width: 1200px) {
 
-  .course {
-    width: 50%;
-  }
+@media screen and (min-width: 800px) {
 
-  .view-details{
-    height: fit-content;
-    flex-flow: column wrap;
-    padding: 40px;
-  }
-
-  .right{
+  .view-details-image img {
     width: 100%;
   }
 
-  .ins-img {
-    text-align: center;
-  }
-
-  .ins-img img {
+  .right {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 800px)  {
 
   .flex-container {
-    flex-flow: column wrap;
+    height: 100vh;
+    flex-flow: row wrap;
+    padding: 2% 2% 2% 0%;
   }
 
-  .flex-container > img {
-    width: 60%;
+  .flex-container img {
+    width: 40%;
   }
 
-  form input:nth-child(-n+6), .name, .contact, .schedule, .time, .email, .enquiry, .submit, select {
-    width: 60%;
-    margin: 0px auto 40px auto;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .box {
+    width: 90%;
+    padding: 1% 2% 2% 1%;
+  }
+
+  .view-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
 }

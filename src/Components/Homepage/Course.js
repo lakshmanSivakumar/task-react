@@ -1,11 +1,9 @@
 import React from 'react'
 import { useHistory,BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const Course = ({id, source, width, description}) => {
+const Course = ({id, togglePopUp, source, width, description}) => {
+    
     const history = useHistory();
-    const handleDetails = (id) => {
-        history.push(`/viewdetails/${id}`);
-    }
 
     const handleSubmitInfo = () => {
         history.push('/submitInfo');
@@ -13,12 +11,12 @@ const Course = ({id, source, width, description}) => {
 
     return (
         <div className="course">
-            <div className="image">
+            <div className="courseImage">
                 <img src={source} alt="courseImage" width={width}></img>
             </div>
             <p>{description}</p>
             <div className="buttons">
-                <button onClick={() => handleDetails(id)}>View details</button>
+                <button onClick={() => togglePopUp(id)}>View details</button>
                 <button onClick={handleSubmitInfo}>Submit Info</button>
             </div>
         </div>

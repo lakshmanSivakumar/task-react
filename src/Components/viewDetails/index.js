@@ -1,12 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import {  useParams, useHistory,BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React from 'react'
 
 import Data from "../../data.json"
 import course from '../../images/course.jpg'
 
-const ViewDetails = () => {   
-    let { id } = useParams(); 
-    let ID = Number(id);   
+const ViewDetails = ({id, handleClose}) => {    
     const starC = <span class="fa fa-star checked"></span>;
     const starUC = <span class="fa fa-star"></span>;
 
@@ -19,20 +16,25 @@ const ViewDetails = () => {
                 elements.push(starUC);
             }
             return (
-                <div className="view-details">
-                    <div className="ins-img">
-                        <img src={course} alt="course"/>
-                    </div>
-                    <div className="right">
-                        <div className="about">
-                            <h2>About the {d.name} Course</h2>
-                        </div>    
-                        <div className="paragraph">
-                            {d.description}
-                        </div>
-                        <div className="rating">
-                            {elements}
-                            {d.reviews} <span>reviews</span>
+                <div className="popup-box">
+                    <div className="box">
+                        <span className="close-icon" onClick={handleClose}>x</span>
+                        <div className="view-details">
+                            <div className="view-details-image">
+                                <img src={course} alt="course"/>
+                            </div>
+                            <div className="right">
+                                <div className="about">
+                                    <h2>About the {d.name} Course</h2>
+                                </div>    
+                                <div className="paragraph">
+                                    {d.description}
+                                </div>
+                                <div className="rating">
+                                    {elements}
+                                    {d.reviews} <span>Reviews</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +42,7 @@ const ViewDetails = () => {
     });
     return (
            <div>
-                {html[ID-1]}
+                {html[id-1]}
            </div>
         );
 }

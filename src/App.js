@@ -12,9 +12,6 @@ function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route path="/viewdetails/:id">
-          <ViewDetails />
-        </Route>
         <Route path="/submitInfo">
           <SubmitInfo />
         </Route>
