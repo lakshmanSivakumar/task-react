@@ -173,6 +173,7 @@ form {
 
 .schedule, .time {
   color: grey;
+  background-color: white;
 }
 
 .submit {
